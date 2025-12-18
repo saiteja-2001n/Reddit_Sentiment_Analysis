@@ -17,3 +17,15 @@ https://huggingface.co/spaces/saiteja2001/Reddit_Sentiment_Analysis
 * **NLP:** NLTK (Natural Language Toolkit), TF-IDF Vectorization
 * **Data Processing:** Pandas, NumPy
 * **Model Persistence:** Pickle
+  
+## 📂 Project Structure
+- app.py: The main Streamlit web application.
+- reddit_sentimental_model.pkl: The trained Logistic Regression model.
+- reddit_tfidf_vectorizer.pkl: The TF-IDF vectorizer used to transform text into numerical data.
+- reddit_sentimental.ipynb: Jupyter Notebook detailing the data collection (PRAW), EDA, and model training.
+- requirements.txt: Configuration file for environment dependencies.
+
+## 📊 How it Works
+- Text Cleaning: The input text is converted to lowercase, URLs are removed, and words are reduced to their root form (lemmatization).
+- Vectorization: The cleaned text is converted into a numerical format using a pre-trained TF-IDF Vectorizer.
+- Classification: The Logistic Regression model predicts the sentiment and provides a confidence score for each category
